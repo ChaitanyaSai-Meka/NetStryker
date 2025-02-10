@@ -67,6 +67,7 @@ Device2                  192.168.1.3       00:25:96:67:89:01  Samsung Electronic
 Scanning the router 192.168.1.1 for open ports to infer firewall type...
 Router Firewall Info (192.168.1.1): Possible firewall with HTTP/HTTPS filtering
 ```
+
 ## Dependencies
 This script uses the following libraries:
 
@@ -75,11 +76,13 @@ scapy: Used for crafting and sending ARP requests to discover devices on the net
 manuf: Used for identifying the vendor of a device based on its MAC address.
 nmap: Used for scanning the router's firewall to detect open ports.
 python-nmap: Python library to interact with Nmap for automated scanning.
-Notes:
+
+## Notes:
 Be cautious when running network scanning tools, as scanning networks without permission can be illegal and unethical.
 This script should only be used on networks where you have explicit permission to conduct scanning or testing.
 Ensure you have backups of any important data before performing network scanning or any other potentially destructive actions.
-Legal Disclaimer
+
+## Legal Disclaimer
 The creator of this tool disclaims any liability for the consequences of using it on unauthorized networks or systems. Use this script only for ethical, educational, or authorized testing purposes.
 
 By running this tool, you acknowledge that you are responsible for any actions taken and must comply with all local laws and regulations related to network scanning and penetration testing.
