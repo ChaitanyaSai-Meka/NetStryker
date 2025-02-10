@@ -9,7 +9,8 @@ Network Scanning: Scans a local network range to identify connected devices and 
 Router Firewall Scan: Analyzes the router's firewall for open ports to infer firewall type and security status.
 Device Information: Provides detailed information about each device on the network, including device names (if available), MAC addresses, vendors, signal strength (RSSI), and approximate distance from the scanning device.
 Dependency Management: Automatically installs required libraries (scapy, psutil, manuf, and nmap), ensuring all dependencies are present before running the script.
-Prerequisites:
+
+## Prerequisites:
 Python 3.x
 scapy library
 psutil library
