@@ -1,10 +1,10 @@
 # Network Scanning and Device Information Tool
-Project Description
+## Project Description
 This Python script is designed to scan a local network, detect devices, and provide detailed information about each device such as its IP address, MAC address, vendor, RSSI (signal strength), and estimated distance from the scanning device. The script also scans the router's firewall to detect open ports and infers firewall types. Additionally, it checks for necessary dependencies like nmap, psutil, and scapy, installing them if they are missing.
 
 This tool is meant for network administrators, cybersecurity professionals, and educational purposes in controlled environments. It can be used to discover devices on the local network and inspect the security of network infrastructure, including firewall configurations.
 
-Key Features:
+## Key Features:
 Network Scanning: Scans a local network range to identify connected devices and retrieve their details such as IP, MAC, vendor, RSSI, and distance.
 Router Firewall Scan: Analyzes the router's firewall for open ports to infer firewall type and security status.
 Device Information: Provides detailed information about each device on the network, including device names (if available), MAC addresses, vendors, signal strength (RSSI), and approximate distance from the scanning device.
@@ -40,7 +40,7 @@ python network_scanning_tool.py
 ```
 Permissions: The script requires sudo privileges to access network interfaces and perform network scans. If the script detects that it is not running with sudo privileges, it will prompt you to enter your password and automatically re-run the script with elevated permissions.
 
-How It Works
+## How It Works
 Dependency Check: The script first checks if the necessary Python packages (scapy, psutil, manuf, and python-nmap) are installed. If any package is missing, it installs them using pip. It also verifies if nmap is installed and installs it based on the operating system.
 
 Network Scan: The script scans the local network range to find devices connected to the network using ARP requests. For each device, it collects:
@@ -54,10 +54,8 @@ Router Firewall Scan: It scans the router (default gateway) for open ports and t
 
 Displaying Results: The script displays a list of detected devices on the network with the collected information, including the firewall status of the router.
 
-Example Output
-bash
-Copy
-Edit
+## Example Output
+```bash
 Scanning network range: 192.168.1.1/24
 Scanned 10 IPs.
 
@@ -68,7 +66,8 @@ Device2                  192.168.1.3       00:25:96:67:89:01  Samsung Electronic
 ...
 Scanning the router 192.168.1.1 for open ports to infer firewall type...
 Router Firewall Info (192.168.1.1): Possible firewall with HTTP/HTTPS filtering
-Dependencies
+```
+## Dependencies
 This script uses the following libraries:
 
 psutil: Used to gather network interface details (IP addresses and network statistics).
